@@ -31,7 +31,8 @@
 <h3 align="center">directize</h3>
 
   <p align="center">
-    This project is a package to help the creation of most known DS/ML/AI project structure, this is to help in the developement of these projects..<br />
+    This project is a package to help the creation of most known DS/ML/AI project structure, this project aims to remove the creating of project structure from the 
+    developer plate..<br />
     <!-- <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
