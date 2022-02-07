@@ -8,7 +8,7 @@ from pathlib import Path
 import logging
 import argparse
 
-from flask import Dlask
+
 def startproject(project_name=None):
     '''
     Creates a standard data science project directory. This helps in
@@ -24,7 +24,7 @@ def startproject(project_name=None):
             │   ├── processed
             │   └── raw
             ├── outputs
-            │   ├── models
+            │   ├── models000000
             ├── src
             │   ├── scripts
             │       ├── ingest
@@ -38,7 +38,7 @@ def startproject(project_name=None):
                 processed: stores all processed data files after cleaning, analysis, feature creation etc.
                 raw: Stores all raw data obtained from databases, file storages, etc.
             outputs:Stores all output files from an experiment.
-                models: Stores trained binary model files. This are models saved after training and evaluation for later use.
+                models: Stores trained binary model files. These are models saved after training and evaluation for later use.
             src: Stores all source code including scripts and notebook experiments.
                 scripts: Stores all code scripts usually in Python/R format. This is usually refactored from the notebooks.
                     modeling: Stores all scripts and code relating to model building, evaluation and saving.
@@ -190,7 +190,7 @@ def save_data(data, name='processed_data', method='csv', loc='processed'):
     '''
     Saves data in the data folder. The data folder contains the processed and raw subfolders.
 
-    The processed subfolder holds data that have been processed by some methods and can be used for later computation. Files like
+    The processed sub folder holds data that have been processed by some methods and can be used for later computation. Files like
     feature matrixes, clean data files etc.
 
     The raw subfolder contains data in the raw format. This can be in the form of sql tables, csv files raw texts etc.
