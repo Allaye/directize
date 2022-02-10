@@ -24,7 +24,7 @@ def startproject(project_name=None):
             │   ├── processed
             │   └── raw
             ├── models
-            │   ├── models000000
+            │   ├── cat_detect.001.pki
             ├── src
             │   ├── scripts
             │       ├── training.py
@@ -84,11 +84,13 @@ def startproject(project_name=None):
     report_path = os.path.join(base_path, 'reports')
     pipeline_path = os.path.join(base_path, 'pipelines')
 
+    # create data directory ####
     os.makedirs(data_path, exist_ok=True)
     os.makedirs(os.path.join(data_path, 'raw'), exist_ok=True)
     os.makedirs(os.path.join(data_path, 'processed'), exist_ok=True)
 
-    os.makedirs(os.path.join(output_path), exist_ok=True)
+    # create models directory
+    os.makedirs(os.path.join(model_path), exist_ok=True)
     os.makedirs(os.path.join(model_path), exist_ok=True)
 
     os.makedirs(os.path.join(src_path), exist_ok=True)
