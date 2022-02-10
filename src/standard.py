@@ -23,15 +23,18 @@ def startproject(project_name=None):
             ├── data
             │   ├── processed
             │   └── raw
-            ├── outputs
+            ├── models
             │   ├── models000000
             ├── src
             │   ├── scripts
-            │       ├── ingest
-            │       ├── modeling
-            │       ├── preparation
-            │       ├── test
-            ├   ├── notebooks
+            │       ├── training.py
+            │       ├── inferance.py
+            │       ├── preparation.py
+            │       ├── test.py
+            ├── notebooks
+            ├── reports/documentation
+            ├── pipelines
+
 
             DETAILS:
             data: Stores data used for the experiments, including raw and intermediate processed data.
