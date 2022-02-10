@@ -91,9 +91,12 @@ def startproject(project_name=None):
 
     # create models directory
     os.makedirs(os.path.join(model_path), exist_ok=True)
-    os.makedirs(os.path.join(model_path), exist_ok=True)
 
+    # create src directory
     os.makedirs(os.path.join(src_path), exist_ok=True)
+    os.open(model_path + '/inference.py', os.O_CREAT)
+    os.open(src_path + '/training.py', os.O_CREAT)
+
     os.makedirs(os.path.join(src_path, 'notebooks'), exist_ok=True)
 
     os.makedirs(os.path.join(scripts_path), exist_ok=True)
