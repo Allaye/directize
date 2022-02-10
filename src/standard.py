@@ -10,7 +10,7 @@ import argparse
 
 
 def startproject(project_name=None):
-    '''
+    """
     Creates a standard data science project directory. This helps in
     easy team collaboration, rapid prototyping, easy reproducibility and fast iteration.
 
@@ -55,7 +55,7 @@ def startproject(project_name=None):
     Returns:
     -------------
         None
-    '''
+    """
 
     DESCRIPTION = '''Creates a standard data science project directory. This helps in
                     easy team collaboration, rapid prototyping, easy reproducibility and fast iteration.       
@@ -165,7 +165,8 @@ def save_model(model, name='model', method='jb'):
                     format(method))
 
     except FileNotFoundError as e:
-        msg = "models folder does not exist. Saving model to the {} folder. It is recommended that you start your project using datasist's start_project function".format(
+        msg = "models folder does not exist. Saving model to the {} folder. It is recommended that you start your " \
+              "project using datasist's start_project function".format(
             name)
         logging.info(msg)
 
@@ -245,7 +246,8 @@ def save_data(data, name='processed_data', method='csv', loc='processed'):
                 logging.error(e)
 
     except FileNotFoundError as e:
-        msg = "data folder does not exist. Saving data to the {} folder. It is recommended that you start your project using datasist's start_project function".format(
+        msg = "data folder does not exist. Saving data to the {} folder. It is recommended that you start your " \
+              "project using datasist's start_project function".format(
             name)
         logging.info(msg)
 
@@ -305,10 +307,11 @@ def save_outputs(data=None, name='proc_outputs', method='jb'):
         elif method is 'csv':
             data.to_csv(os.path.join(outputs_path, name) + '.csv', index=False)
         else:
-            logging.error("An error occured while savng the file")
+            logging.error("An error occurred while saving the file")
 
     except FileNotFoundError as e:
-        msg = "outputs folder does not exist. Saving data to the current folder. It is recommended that you start your project using datasist's start_project function"
+        msg = "outputs folder does not exist. Saving data to the current folder. It is recommended that you start " \
+              "your project using datasist's start_project function "
         logging.info(msg)
 
         if method is 'jb':
