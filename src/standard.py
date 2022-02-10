@@ -28,11 +28,12 @@ def startproject(project_name=None):
             ├── src
             │   ├── scripts
             │       ├── training.py
-            │       ├── inferance.py
+            │       ├── inference.py
             │       ├── preparation.py
             │       ├── test.py
             ├── notebooks
             ├── reports/documentation
+                ├── Readme.md
             ├── pipelines
 
 
@@ -40,8 +41,7 @@ def startproject(project_name=None):
             data: Stores data used for the experiments, including raw and intermediate processed data.
                 processed: stores all processed data files after cleaning, analysis, feature creation etc.
                 raw: Stores all raw data obtained from databases, file storages, etc.
-            outputs:Stores all output files from an experiment.
-                models: Stores trained binary model files. These are models saved after training and evaluation for later use.
+            models: Stores all models trained during the experiments.
             src: Stores all source code including scripts and notebook experiments.
                 scripts: Stores all code scripts usually in Python/R format. This is usually refactored from the notebooks.
                     modeling: Stores all scripts and code relating to model building, evaluation and saving.
@@ -74,14 +74,15 @@ def startproject(project_name=None):
         args = parser.parse_args()
         name = args.name
 
-    print("Creating project {}".format(name))
+    print("Creating standard project structure for {}".format(name))
 
     base_path = os.path.join(os.getcwd(), name)
     data_path = os.path.join(base_path, 'data')
-    output_path = os.path.join(base_path, 'outputs')
-    model_path = os.path.join(output_path, 'models')
+    model_path = os.path.join(base_path, 'models')
     src_path = os.path.join(base_path, 'src')
-    scripts_path = os.path.join(base_path, 'src', 'scripts')
+    notebook_path = os.path.join(base_path, 'notebooks')
+    report_path = os.path.join(base_path, 'reports')
+    pipeline_path = os.path.join(base_path, 'pipelines')
 
     os.makedirs(data_path, exist_ok=True)
     os.makedirs(os.path.join(data_path, 'raw'), exist_ok=True)
