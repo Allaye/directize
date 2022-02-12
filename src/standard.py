@@ -77,9 +77,6 @@ def startproject(project_name=None):
     print("Creating standard project structure for {}".format(name))
 
     base_path = os.path.join(os.getcwd(), name)
-    base_path = os.path.join(os.getcwd(), name)
-    base_path = os.path.join(os.getcwd(), name)
-
     data_path = os.path.join(base_path, 'data')
     model_path = os.path.join(base_path, 'models')
     src_path = os.path.join(base_path, 'src')
