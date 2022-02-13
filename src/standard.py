@@ -10,57 +10,58 @@ import argparse
 
 
 def startproject(project_name=None):
+    # noinspection SpellCheckingInspection
     """
-    Creates a standard data science project directory. This helps in
-    easy team collaboration, rapid prototyping, easy reproducibility and fast iteration.
+        Creates a standard data science project directory. This helps in
+        easy team collaboration, rapid prototyping, easy reproducibility and fast iteration.
 
-    The directory structure is by no means a globally recognized standard, but was inspired by
-    the folder structure created by the Azure team (https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)
-    and Edward Ma (https://makcedward.github.io/) of OOCL.
+        The directory structure is by no means a globally recognized standard, but was inspired by
+        the folder structure created by the Azure team (https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)
+        and Edward Ma (https://makcedward.github.io/) of OOCL.
 
-    PROJECT STRUCTURE:
+        PROJECT STRUCTURE:
 
-            ├── data
-            │   ├── processed
-            │   └── raw
-            ├── models
-            │   ├── cat_detect.001.pki
-            ├── src
-            │   ├── scripts
-            │       ├── training.py
-            │       ├── inference.py
-            │       ├── preparation.py
-            │       ├── test.py
-            ├── notebooks
-            ├── reports/documentation
-                ├── Readme.md
-            ├── pipelines
+                ├── data
+                │   ├── processed
+                │   └── raw
+                ├── models
+                │   ├── cat_detect.001.pki
+                ├── src
+                │   ├── scripts
+                │       ├── training.py
+                │       ├── inference.py
+                │       ├── preparation.py
+                │       ├── test.py
+                ├── notebooks
+                ├── reports/documentation
+                    ├── Readme.md
+                ├── pipelines
 
 
-            DETAILS:
-            data: Stores data used for the experiments, including raw and intermediate processed data.
-                processed: stores all processed data files after cleaning, analysis, feature creation etc.
-                raw: Stores all raw data obtained from databases, file storages, etc.
-            models: Stores all models trained during the experiments.
-            src: Stores all source code including scripts and notebook experiments.
-                scripts: Stores all code scripts usually in Python/R format. This is usually refactored from the notebooks.
-                    modeling: Stores all scripts and code relating to model building, evaluation and saving.
-                    preparation: Stores all scripts used for data preparation and cleaning.
-                    ingest: Stores all scripts used for reading in data from different sources like databases, web or file storage.
-                    test: Stores all test files for code in scripts.
-                notebooks: Stores all jupyter notebooks used for experimentation.
+                DETAILS:
+                data: Stores data used for the experiments, including raw and intermediate processed data.
+                    processed: stores all processed data files after cleaning, analysis, feature creation etc.
+                    raw: Stores all raw data obtained from databases, file storages, etc.
+                models: Stores all models trained during the experiments.
+                src: Stores all source code including scripts and notebook experiments.
+                    scripts: Stores all code scripts usually in Python/R format. This is usually refactored from the notebooks.
+                        modeling: Stores all scripts and code relating to model building, evaluation and saving.
+                        preparation: Stores all scripts used for data preparation and cleaning.
+                        ingest: Stores all scripts used for reading in data from different sources like databases, web or file storage.
+                        test: Stores all test files for code in scripts.
+                    notebooks: Stores all jupyter notebooks used for experimentation.
 
-    Parameters:
-    -------------
-        project_name: String, Filepath
-            Name of filepath of the directory to initialize and create folders.
+        Parameters:
+        -------------
+            project_name: String, Filepath
+                Name of filepath of the directory to initialize and create folders.
 
-    Returns:
-    -------------
-        None
-    """
+        Returns:
+        -------------
+            None
+        """
 
-    DESCRIPTION = '''Creates a standard data science project directory. This helps in
+    description = '''Creates a standard data science project directory. This helps in
                     easy team collaboration, rapid prototyping, easy reproducibility and fast iteration.       
                     The directory structure is by no means a globally recognized standard, but was inspired by
                     the folder structure created by the Azure team (https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)
@@ -69,7 +70,7 @@ def startproject(project_name=None):
     if project_name:
         name = project_name
     else:
-        parser = argparse.ArgumentParser(prog='project', description=DESCRIPTION)
+        parser = argparse.ArgumentParser(prog='project', description=description)
         parser.add_argument('name', default='data_project', type=str, help='Name of directory to contain folders')
         args = parser.parse_args()
         name = args.name
