@@ -96,6 +96,9 @@ def startproject(project_name=None):
     os.makedirs(os.path.join(src_path), exist_ok=True)
     os.open(model_path + '/inference.py', os.O_CREAT)
     os.open(src_path + '/training.py', os.O_CREAT)
+    os.open(src_path + '/preparation.py', os.O_CREAT)
+    os.open(src_path + '/test.py', os.O_CREAT)
+
 
     os.makedirs(os.path.join(src_path, 'notebooks'), exist_ok=True)
 
