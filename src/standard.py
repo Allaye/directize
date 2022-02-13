@@ -108,11 +108,7 @@ def startproject(project_name=None):
 
     # create pipeline directory
     os.makedirs(pipeline_path, exist_ok=True)
-    # os.makedirs(os.path.join(scripts_path), exist_ok=True)
-    # os.makedirs(os.path.join(scripts_path, 'ingest'), exist_ok=True)
-    # os.makedirs(os.path.join(scripts_path, 'preparation'), exist_ok=True)
-    # os.makedirs(os.path.join(scripts_path, 'modeling'), exist_ok=True)
-    # os.makedirs(os.path.join(scripts_path, 'test'), exist_ok=True)
+    # todo: add some pipeline files here
 
     # project configuration settings
     standard_config = dict(description="This object contains all configuration settings for this module.",
