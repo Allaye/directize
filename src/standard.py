@@ -1,9 +1,9 @@
 import os
 import argparse
 import json
-import joblib
+# import joblib
 import pickle
-import pandas as pd
+# import pandas as pd
 from pathlib import Path
 import logging
 import argparse
@@ -101,8 +101,13 @@ def startproject(project_name=None):
     os.open(src_path + '/modeling.py', os.O_CREAT)
 
     # create notebooks directory
-    os.makedirs(os.path.join(src_path, 'notebooks'), exist_ok=True)
+    os.makedirs(notebook_path, exist_ok=True)
 
+    # create reports directory
+    os.makedirs(report_path, exist_ok=True)
+
+    # create pipeline directory
+    os.makedirs(pipeline_path, exist_ok=True)
     # os.makedirs(os.path.join(scripts_path), exist_ok=True)
     # os.makedirs(os.path.join(scripts_path, 'ingest'), exist_ok=True)
     # os.makedirs(os.path.join(scripts_path, 'preparation'), exist_ok=True)
@@ -119,7 +124,7 @@ def startproject(project_name=None):
         readme.write(DESCRIPTION)
 
     with open(os.path.join(base_path, "config.txt"), 'w') as configfile:
-        json.dump(json_config, configfile)
+        json.dump(standard_config, configfile)
 
     print("Project created successfully in {}".format(base_path))
 
