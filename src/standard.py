@@ -36,6 +36,7 @@ def startproject(project_name=None):
                 ├── reports/documentation
                     ├── Readme.md
                 ├── pipelines
+                ├── requirements.txt
 
 
                 DETAILS:
@@ -111,6 +112,9 @@ def startproject(project_name=None):
     os.makedirs(pipeline_path, exist_ok=True)
     # todo: add some pipeline files here
 
+    # create requirements.txt
+    os.open(base_path + '/requirements.txt', os.O_CREAT)
+
     # project configuration settings
     standard_config = dict(description="This object contains all configuration settings for this module.",
                            basepath=base_path, datapath=data_path, srcpath=src_path, modelpath=model_path,
@@ -118,12 +122,10 @@ def startproject(project_name=None):
 
     # create a readme.txt file to explain the folder structure
     with open(os.path.join(base_path, "README.txt"), 'w') as readme:
-        readme.write(DESCRIPTION)
+        readme.write(description)
 
     with open(os.path.join(base_path, "config.txt"), 'w') as configfile:
         json.dump(standard_config, configfile)
 
     print("Project created successfully in {}".format(base_path))
-
-
 
