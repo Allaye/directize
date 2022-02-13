@@ -98,25 +98,21 @@ def startproject(project_name=None):
     os.open(src_path + '/training.py', os.O_CREAT)
     os.open(src_path + '/preparation.py', os.O_CREAT)
     os.open(src_path + '/test.py', os.O_CREAT)
+    os.open(src_path + '/modeling.py', os.O_CREAT)
 
-
+    # create notebooks directory
     os.makedirs(os.path.join(src_path, 'notebooks'), exist_ok=True)
 
-    os.makedirs(os.path.join(scripts_path), exist_ok=True)
-    os.makedirs(os.path.join(scripts_path, 'ingest'), exist_ok=True)
-    os.makedirs(os.path.join(scripts_path, 'preparation'), exist_ok=True)
-    os.makedirs(os.path.join(scripts_path, 'modeling'), exist_ok=True)
-    os.makedirs(os.path.join(scripts_path, 'test'), exist_ok=True)
+    # os.makedirs(os.path.join(scripts_path), exist_ok=True)
+    # os.makedirs(os.path.join(scripts_path, 'ingest'), exist_ok=True)
+    # os.makedirs(os.path.join(scripts_path, 'preparation'), exist_ok=True)
+    # os.makedirs(os.path.join(scripts_path, 'modeling'), exist_ok=True)
+    # os.makedirs(os.path.join(scripts_path, 'test'), exist_ok=True)
 
     # project configuration settings
-    json_config = {
-        "description":
-            "This file holds all confguration settings for the current project",
-        "basepath": base_path,
-        "datapath": data_path,
-        "outputpath": output_path,
-        "modelpath": model_path
-    }
+    standard_config = dict(description="This object contains all configuration settings for this module.",
+                           basepath=base_path, datapath=data_path, srcpath=src_path, modelpath=model_path,
+                           reportpath=report_path, pipelinepath=pipeline_path, notebookpath=notebook_path)
 
     # create a readme.txt file to explain the folder structure
     with open(os.path.join(base_path, "README.txt"), 'w') as readme:
