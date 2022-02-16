@@ -26,6 +26,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 setup.cfg
+setup.py
 pyproject.toml
 /dist
 MANIFEST
