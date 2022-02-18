@@ -10,12 +10,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 
@@ -47,10 +47,7 @@
   </p>
 </div>
 
-##### Thanks for checking out this project. 
-##### If you have a suggestion that would make this better, please fork the repo and create a pull request or simply open an issue with the tag "feature update".
-##### Don't forget to give the project a star if you like it!
-##### Thanks again! Now go create something AMAZING! D🫂
+
 
 
 <!-- TABLE OF CONTENTS -->
@@ -85,9 +82,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Directize
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This is a productivty project, the ideal of this project is to help in automating project directory structure
+This is a productivity project, the ideal of this project is to help in automating project directory structure
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -121,6 +118,11 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+##### Thanks for checking out this project. 
+##### If you have a suggestion that would make this better, please fork the repo and create a pull request or simply open an issue with the tag "feature update".
+##### Don't forget to give the project a star if you like it!
+##### Thanks again! Now go create something AMAZING! 
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
