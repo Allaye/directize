@@ -96,20 +96,14 @@ This is a productivity project, the ideal of this project is to help in automati
 
 <!-- installation -->
 ## installation
-Install and update using `pip`_:
+Install and update using `[Pip](https://pypi.org/project/pip/)`
 
-. code-block:: text
-
-    $ pip install -U Flask
-
+    $ pip install directize
 
 
 <!-- -->
 # Usage
 A Simple Example
-
-
-. code-block:: python
 
     # use as an import
     from directize import standard
@@ -162,9 +156,9 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `[license](https://github.com/Allaye/directize/blob/master/LICENSE) for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p> -->
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
