@@ -1,8 +1,12 @@
 <div id="top"></div>
 
+[![Made in Nigeria with 🥰💝💖💗](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)
 
+# RiRi
 
+"RiRi" means "to see" in the Nigerian Yoruba language. It is a cross-platform optical character recognition mobile application. It aims to make information more accessible to people with visual impairments and transcribes image text to audio.
 
+<img src=https://github.com/Rita-Okonkwo/RiRi/blob/master/screenshots/App%20Icon.png alt="RiRi Logo" width=180 height=180/>
 
 <!-- PROJECT SHIELDS -->
 <!--
