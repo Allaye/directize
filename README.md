@@ -82,8 +82,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Directize
 
-This is a productivity project, the ideal of this project is to help in automating project directory structure
-
+This is a productivity project, the ideal of this project is to help in automating project directory structure, Directize is
+a simple lightweight package that is designed to make creating DS/AI project easier, it gives you the options of creating a
+project structure that is most known in the industry. 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -156,7 +157,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `[license](https://github.com/Allaye/directize/blob/master/LICENSE) for more information.
+Distributed under the MIT License. See [license](https://github.com/Allaye/directize/blob/master/LICENSE) for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -200,4 +201,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png --> 
 
-<h4 align="center"> --> Thanks for checking out this project. <-- </h4>
+<h4 align="center">Thanks for checking out this project.</h4>
