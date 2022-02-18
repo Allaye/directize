@@ -26,7 +26,7 @@
     <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
-<h3 align="center">directize</h3>
+<h3 align="center">Directize</h3>
 
 [![Made in Nigeria with 🥰💝💖💗](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)
 
@@ -50,7 +50,7 @@
 ##### Thanks for checking out this project. 
 ##### If you have a suggestion that would make this better, please fork the repo and create a pull request or simply open an issue with the tag "feature update".
 ##### Don't forget to give the project a star if you like it!
-##### Thanks again! Now go create something AMAZING! :D🫂
+##### Thanks again! Now go create something AMAZING! D🫂
 
 
 <!-- TABLE OF CONTENTS -->
