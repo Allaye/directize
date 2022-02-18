@@ -82,8 +82,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Directize
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 This is a productivity project, the ideal of this project is to help in automating project directory structure
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -96,6 +94,30 @@ This is a productivity project, the ideal of this project is to help in automati
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- installation -->
+## installation
+Install and update using `pip`_:
+
+. code-block:: text
+
+    $ pip install -U Flask
+
+
+
+<!-- -->
+# Usage
+A Simple Example
+
+
+. code-block:: python
+
+    # use as an import
+    from directize import standard
+
+    standard.create_project()
+
+    # use as A CLI
+    python directize standard
 
 
 <!-- GETTING STARTED -->
@@ -133,12 +155,12 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p> -->
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- LICENSE -->
-<!-- ## License
+## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -184,4 +206,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png --> 
 
-<h4 align="center"> --> Thanks for checking out this projecr. <-- </h4>
+<h4 align="center"> --> Thanks for checking out this project. <-- </h4>
