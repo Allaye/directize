@@ -30,7 +30,7 @@
 
 [![Made in Nigeria with 🥰💝💖💗](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)
 
-<img src=https://github.com/Rita-Okonkwo/RiRi/blob/master/screenshots/App%20Icon.png alt="RiRi Logo" width=180 height=180/>
+<img src=https://github.com/Allaye/directize/blob/master/img/directize.png alt="Directize Logo" width=180 height=180/>
 
   <p align="center">
     This project is a package to help the creation of most known DS/ML/AI project structure, this project aims to remove the creating of project structure from the 
