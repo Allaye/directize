@@ -31,8 +31,7 @@
 [![Made in Nigeria with 🥰💝💖💗](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)
 [![latest release](https://img.shields.io/badge/pip-v1.5.2-blue.svg)](https://pypi.org/project/directize/)
 [![status](https://img.shields.io/badge/status-stable-brightgreen.svg)](./)
-[Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/pypi/directize)
-[![Downloads](https://pepy.tech/badge/datasist/month)](https://pepy.tech/project/directize/month)
+[![Downloads](https://pepy.tech/badge/directize/month)](https://pepy.tech/project/directize/month)
 
 <img src=https://github.com/Allaye/directize/blob/master/img/directize.png alt="Directize Logo" width=180 height=180/>
 
