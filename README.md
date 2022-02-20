@@ -28,7 +28,7 @@
 
 <h3 align="center">Directize</h3>
 
-[![Made in Nigeria with 🥰💝💖💗](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)
+[![Made in Nigeria with 🥰💝💖💗](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/allaye/directize)
 [![latest release](https://img.shields.io/badge/pip-v1.5.2-blue.svg)](https://pypi.org/project/directize/)
 [![status](https://img.shields.io/badge/status-stable-brightgreen.svg)](./)
 [![Downloads](https://pepy.tech/badge/directize/month)](https://pepy.tech/project/directize/month)
