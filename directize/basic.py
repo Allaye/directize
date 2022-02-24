@@ -49,8 +49,19 @@ def basicproject(project_name=None):
         None
     """
 
-    description = '''Creates a standard data science project directory. This helps in
+    description = '''Creates a basic AI/ML/DS project directory. This helps in
                     easy team collaboration, rapid prototyping, easy reproducibility and fast iteration.       
-                    The directory structure is by no means a globally recognized standard, but was inspired by
-                    the folder structure created by the Azure team (https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)
+                    The directory structure is by no means a globally recognized standard, but was inspired by the software 
+                    community choices for project structure.
                   '''
+    name = ''
+    if project_name:
+        name = project_name
+    else:
+        parser = argparse.ArgumentParser(description=description)
+        parser.add_argument('project_name', help='Name of the project directory to create.')
+        args = parser.parse_args()
+        name = args.project_name
+
+    print('Creating project directory: {}'.format(name))
+    
