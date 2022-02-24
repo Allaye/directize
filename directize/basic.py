@@ -1,5 +1,9 @@
+import os
+import json
+import argparse
 
-def basicproject(project_name):
+
+def basicproject(project_name=None):
     """
     Creates a basic data science project directory. This helps in
      rapid prototyping, easy reproducibility and fast iteration.
@@ -25,7 +29,7 @@ def basicproject(project_name):
                 processed: stores all processed data files after cleaning, analysis, feature creation etc.
                 raw: Stores all raw data obtained from databases, file storages, etc.
                 training: contains cleaning data prepared for training of the model
-                test: contains data to test model after traning
+                test: contains data to test model after training
 
             src: Stores all source code including scripts and notebook experiments.
                 scripts: Stores all code scripts usually in Python/R format. This is usually refactored from the notebooks.
@@ -45,4 +49,8 @@ def basicproject(project_name):
         None
     """
 
-
+    description = '''Creates a standard data science project directory. This helps in
+                    easy team collaboration, rapid prototyping, easy reproducibility and fast iteration.       
+                    The directory structure is by no means a globally recognized standard, but was inspired by
+                    the folder structure created by the Azure team (https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)
+                  '''
