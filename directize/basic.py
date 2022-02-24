@@ -66,3 +66,5 @@ def basicproject(project_name=None):
     print('Creating project directory: {}'.format(name))
 
     base_path = os.path.abspath(os.path.join(os.getcwd(), name))
+    data_path = os.path.join(base_path, 'data')
+    src_path = os.path.join(base_path, 'src')
