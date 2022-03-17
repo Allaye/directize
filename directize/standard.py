@@ -4,6 +4,8 @@ import logging
 import argparse
 from config import description
 
+logging.basicConfig(filename='directize.log', filemode='w', format='%(process)d-%(levelname)s-%(message)s')
+
 
 def standardproject(project_name=None):
     # noinspection SpellCheckingInspection
@@ -67,7 +69,7 @@ def standardproject(project_name=None):
         args = parser.parse_args()
         name = args.name
 
-    print("Creating standard project structure for {}".format(name))
+    logging.info('Creating project directory: {}'.format(name))
 
     try:
         base_path = os.path.join(os.getcwd(), name)
@@ -78,7 +80,7 @@ def standardproject(project_name=None):
         report_path = os.path.join(base_path, 'reports')
         pipeline_path = os.path.join(base_path, 'pipelines')
     except Exception as e:
-        logging.error(e)
+        logging.error(e, exc_info=True)
 
     # create data directory ####
     try:
@@ -110,7 +112,7 @@ def standardproject(project_name=None):
         # create requirements.txt
         os.open(base_path + '/requirements.txt', os.O_CREAT)
     except Exception as e:
-        logging.error(e)
+        logging.error(e, exc_info=True)
 
     # project configuration settings
     standard_config = dict(description="This object contains all configuration settings for this module.",
