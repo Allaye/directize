@@ -1,6 +1,5 @@
 import os
 import json
-import pickle
 import logging
 import argparse
 from config import description
@@ -70,42 +69,48 @@ def standardproject(project_name=None):
 
     print("Creating standard project structure for {}".format(name))
 
-    base_path = os.path.join(os.getcwd(), name)
-    data_path = os.path.join(base_path, 'data')
-    model_path = os.path.join(base_path, 'models')
-    src_path = os.path.join(base_path, 'src')
-    notebook_path = os.path.join(base_path, 'notebooks')
-    report_path = os.path.join(base_path, 'reports')
-    pipeline_path = os.path.join(base_path, 'pipelines')
+    try:
+        base_path = os.path.join(os.getcwd(), name)
+        data_path = os.path.join(base_path, 'data')
+        model_path = os.path.join(base_path, 'models')
+        src_path = os.path.join(base_path, 'src')
+        notebook_path = os.path.join(base_path, 'notebooks')
+        report_path = os.path.join(base_path, 'reports')
+        pipeline_path = os.path.join(base_path, 'pipelines')
+    except Exception as e:
+        logging.error(e)
 
     # create data directory ####
-    os.makedirs(data_path, exist_ok=True)
-    os.makedirs(os.path.join(data_path, 'raw'), exist_ok=True)
-    os.makedirs(os.path.join(data_path, 'processed'), exist_ok=True)
+    try:
+        os.makedirs(data_path, exist_ok=True)
+        os.makedirs(os.path.join(data_path, 'raw'), exist_ok=True)
+        os.makedirs(os.path.join(data_path, 'processed'), exist_ok=True)
 
-    # create models directory
-    os.makedirs(os.path.join(model_path), exist_ok=True)
+        # create models directory
+        os.makedirs(os.path.join(model_path), exist_ok=True)
 
-    # create src directory
-    os.makedirs(os.path.join(src_path), exist_ok=True)
-    os.open(model_path + '/inference.py', os.O_CREAT)
-    os.open(src_path + '/training.py', os.O_CREAT)
-    os.open(src_path + '/preparation.py', os.O_CREAT)
-    os.open(src_path + '/test.py', os.O_CREAT)
-    os.open(src_path + '/modeling.py', os.O_CREAT)
+        # create src directory
+        os.makedirs(os.path.join(src_path), exist_ok=True)
+        os.open(model_path + '/inference.py', os.O_CREAT)
+        os.open(src_path + '/training.py', os.O_CREAT)
+        os.open(src_path + '/preparation.py', os.O_CREAT)
+        os.open(src_path + '/test.py', os.O_CREAT)
+        os.open(src_path + '/modeling.py', os.O_CREAT)
 
-    # create notebooks directory
-    os.makedirs(notebook_path, exist_ok=True)
+        # create notebooks directory
+        os.makedirs(notebook_path, exist_ok=True)
 
-    # create reports directory
-    os.makedirs(report_path, exist_ok=True)
+        # create reports directory
+        os.makedirs(report_path, exist_ok=True)
 
-    # create pipeline directory
-    os.makedirs(pipeline_path, exist_ok=True)
-    # todo: add some pipeline files here
+        # create pipeline directory
+        os.makedirs(pipeline_path, exist_ok=True)
+        # todo: add some pipeline files here
 
-    # create requirements.txt
-    os.open(base_path + '/requirements.txt', os.O_CREAT)
+        # create requirements.txt
+        os.open(base_path + '/requirements.txt', os.O_CREAT)
+    except Exception as e:
+        logging.error(e)
 
     # project configuration settings
     standard_config = dict(description="This object contains all configuration settings for this module.",
@@ -119,5 +124,4 @@ def standardproject(project_name=None):
     with open(os.path.join(base_path, "config.txt"), 'w') as configfile:
         json.dump(standard_config, configfile)
 
-    print("Project created successfully in {}".format(base_path))
-
+    logging.info("Project {} created successfully".format(base_path))
