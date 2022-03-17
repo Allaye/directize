@@ -3,9 +3,10 @@ import json
 import pickle
 import logging
 import argparse
+from config import description
 
 
-def startproject(project_name=None):
+def standardproject(project_name=None):
     # noinspection SpellCheckingInspection
     """
         Creates a standard data science project directory. This helps in
@@ -58,11 +59,6 @@ def startproject(project_name=None):
             None
         """
 
-    description = '''Creates a standard data science project directory. This helps in
-                    easy team collaboration, rapid prototyping, easy reproducibility and fast iteration.       
-                    The directory structure is by no means a globally recognized standard, but was inspired by
-                    the folder structure created by the Azure team (https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)
-                  '''
     name = ''
     if project_name:
         name = project_name
