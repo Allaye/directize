@@ -8,5 +8,5 @@ if __name__ == "__main__":
     parser.add_argument('-d', '--directorytype', type=str, choices=directory.keys(), help='choose a directory structure to create', required=True)
     parser.add_argument('-p', '--projectname', type=str, help='name of the project been created', required=False)
     args = parser.parse_args()
-    print(args.project)
-    standardproject(args.project)
+    print(args.projectname)
+    standardproject(args.projectname)
