@@ -4,7 +4,8 @@ import logging
 import argparse
 from config import description
 
-logging.basicConfig(filename='directize.log', filemode='w', format='%(process)d-%(levelname)s-%(message)s')
+
+logging.basicConfig(filename='directize.log', filemode='w', level=logging.INFO, format='%(process)d-%(levelname)s-%(message)s')
 
 
 def standardproject(project_name=None):
@@ -64,10 +65,11 @@ def standardproject(project_name=None):
     if project_name:
         name = project_name
     else:
-        parser = argparse.ArgumentParser(prog='project', description=description)
-        parser.add_argument('name', default='data_project', type=str, help='Name of directory to contain folders')
-        args = parser.parse_args()
-        name = args.name
+        name = os.path.basename(os.getcwd())
+    #     parser = argparse.ArgumentParser(prog='project', description=description)
+    #     parser.add_argument('name', default='data_project', type=str, help='Name of directory to contain folders')
+    #     args = parser.parse_args()
+    #     name = args.name
 
     logging.info('Creating project directory: {}'.format(name))
 
